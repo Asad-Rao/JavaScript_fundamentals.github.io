@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Index</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #00d390, #7dd56f);
+      }
+      h1 {
+        font-size: 50px;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals - Part 1</h1>
+    <!-- <script>
+      alert('Learning JavaScript is Fun');
+    </script> -->
+    <!-- <script src="Coding_challenge_three.js"></script> -->
+    <!-- <script src="switch_statement.js"></script> -->
+    <script>
+      function function_one(function_one_paramaeter_one) {
+        return function_one_paramaeter_one;
+      }
+      function function_two(
+        function_two_paramaeter_one,
+        function_two_paramaeter_two
+      ) {
+        console.log(function_two_paramaeter_one, function_two_paramaeter_two);
+        // The return value of the function_one will be in below statement
+        // hence we are console logging it
+        console.log(function_one(function_two_paramaeter_two));
+        // Calling function_one inside function_two and
+        //sending function_two_paramaeter_one as an argument
+        console.log(function_one(function_two_paramaeter_one));
+        // The returned value will be printed using console.log and calling function two
+        return function_one(function_two_paramaeter_one);
+      }
+      const function_two_argument_one = prompt(
+        'Enter first argumment of function two'
+      );
+      const function_two_argument_two = prompt(
+        'Enter second argumment of function two'
+      );
+
+      // calling function_two will cause the console.log statement of functrion_two
+      //  be executed
+      // function_two(function_two_argument_one, function_two_argument_two);
+      // Console logging function_two
+      // Following code will cause console.log statement inside the
+      // function_two function to be executed
+      console.log(
+        function_two(function_two_argument_one, function_two_argument_two)
+      );
+      const fruit_one = Number(prompt('Enter the amount of first fruit'));
+      const fruit_two = Number(prompt('Enter the amount of second fruit'));
+      const fruit_pieces = Number(prompt('Enter number of pieces to be cut'));
+      function foodprocessor(p_one, p_two) {
+        console.log(
+          'First Fruit Pieces' + cut_fruit_pieces(fruit_one, fruit_pieces)
+        );
+        console.log(
+          'Second Fruit Pieces' + cut_fruit_pieces(fruit_two, fruit_pieces)
+        );
+      }
+      // Calling foodprocessor function with two arguments
+      // fruit_one and fruit_two will replace the p_one parameter and p_two parameter
+      // with fruit_one and fruit_two
+      foodprocessor(fruit_one, fruit_two);
+      function cut_fruit_pieces(fruit_one, pieces) {
+        return fruit_one * pieces;
+      }
+    </script>
+  </body>
+</html>
